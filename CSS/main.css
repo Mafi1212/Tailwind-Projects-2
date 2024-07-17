@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-2xl
+    }
+   
+}
+
+@layer components{
+    .btn{
+        @apply px-6 py-2 rounded-full  transition focus:ring-2 text-2xl 
+    }
+    
+    .btn-red{
+        @apply bg-red-900 hover:bg-red-700 hover:text-white text-yellow-200
+    }
+    
+    .btn-indigo{
+        @apply bg-indigo-800  text-white  hover:bg-indigo-600
+    }
+    
+    .btn-green{
+        @apply bg-green-900 text-white hover:bg-green-700
+    }
+
+    .stock{
+        @apply flex gap-6 flex-col md:flex-row items-center p-[11px] border rounded dark:text-white
+       } 
+      .images{
+        @apply w-full h-44 object-cover md:h-fit md:size-[150px] rounded
+      }
+      .span-tag{
+        @apply bg-[#333333] text-white px-[8px] py-[2px] rounded uppercase
+      } 
+
+    .Personolize-news{
+        @apply text-center bg-[#E6EBF3] rounded-full  text-lg  font-semibold py-[6px] hover:scale-105
+    }   
+}
