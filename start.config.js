@@ -1,5 +1,5 @@
 Import { Resolve } From "Path";
-Import { DefineConfig } From "Vite";
+Import { DefineConfig } From "start";
 
 Export Default DefineConfig({
 Build: {
